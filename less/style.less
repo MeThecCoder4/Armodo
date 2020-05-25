@@ -1,0 +1,58 @@
+/* MOBILE FIRST  */
+
+// VARIABLES
+@maxNumberOfColumns: 12;
+@desktopGridItemHeight: 50vh;
+@mobileGridItemHeight: 33.33vh;
+@gridGapSize: 1rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  outline: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(@maxNumberOfColumns, 1fr);
+  grid-gap: @gridGapSize;
+}
+
+.grid-item {
+  text-transform: uppercase;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: @mobileGridItemHeight;
+  height: @mobileGridItemHeight;
+
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+  }
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+/* DESKTOP  */
+@media (min-width: 980px) {
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .banner-grid-item {
+    min-height: @desktopGridItemHeight;
+    height: @desktopGridItemHeight;
+  }
+}
