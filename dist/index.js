@@ -7,7 +7,9 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 var linkItems = document.getElementsByClassName("link-item");
-setLinksVisibility();
+var minDesktopWidth = 980;
+setLinksVisibility(); // Make links return to their 'default state' on window resize
+
 window.addEventListener("resize", function () {
   var _iterator = _createForOfIteratorHelper(linkItems),
       _step;
@@ -16,7 +18,7 @@ window.addEventListener("resize", function () {
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
       var item = _step.value;
 
-      if (window.innerWidth < 980) {
+      if (window.innerWidth < minDesktopWidth) {
         var listOfLinks = item.getElementsByTagName("ul")[0];
         listOfLinks.style.display = "none";
       } else {
@@ -29,10 +31,11 @@ window.addEventListener("resize", function () {
   } finally {
     _iterator.f();
   }
-});
+}); // Show and hide links on header click
 
 function setLinksVisibility() {
-  // Show and hide links on header click
+  var marginStr = "3.3rem";
+
   var _iterator2 = _createForOfIteratorHelper(linkItems),
       _step2;
 
@@ -42,23 +45,24 @@ function setLinksVisibility() {
       var header = item.getElementsByClassName("header")[0];
       var listOfLinks = item.getElementsByTagName("ul")[0];
 
-      if (window.innerWidth < 980) {
+      if (window.innerWidth < minDesktopWidth) {
         header.addEventListener("click", function () {
           if (listOfLinks.style.display === "block") {
             listOfLinks.style.display = "none";
-            if (header.classList.contains("last")) header.style.setProperty("margin-bottom", "3.3rem");
+            if (header.classList.contains("last")) header.style.setProperty("margin-bottom", marginStr);
           } else {
             listOfLinks.style.display = "block";
 
             if (header.classList.contains("last")) {
               header.style.setProperty("margin-bottom", "0");
-              listOfLinks.style.setProperty("margin-bottom", "3.3rem");
+              listOfLinks.style.setProperty("margin-bottom", marginStr);
             }
           }
         });
-      } else {
-        listOfLinks.style.display = "block";
-      }
+      } // All links shown on desktop
+      else {
+          listOfLinks.style.display = "block";
+        }
     };
 
     for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
