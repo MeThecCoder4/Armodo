@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" width="16" height="13">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-482 -4757L1438 -4757L1438 136L-482 136Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="main" clip-path="url(#cp1)">
+		<g id="stopka">
+			<g id="mail (3)">
+				<g id="Group 533">
+					<g id="Group 532">
+						<path id="Path 429" class="shp0" d="M14.54 0L1.4 0C1.19 0 0.98 0.05 0.8 0.14L7.94 7.28L9.54 5.74C9.54 5.74 9.54 5.74 9.54 5.74L9.54 5.74L15.14 0.14C14.96 0.05 14.76 0 14.54 0Z" />
+					</g>
+				</g>
+				<g id="Group 535">
+					<g id="Group 534">
+						<path id="Path 430" class="shp0" d="M15.8 0.8L10.53 6.07L15.8 11.34C15.89 11.16 15.94 10.96 15.94 10.74L15.94 1.4C15.94 1.19 15.89 0.98 15.8 0.8Z" />
+					</g>
+				</g>
+				<g id="Group 537">
+					<g id="Group 536">
+						<path id="Path 431" class="shp0" d="M0.14 0.8C0.05 0.98 0 1.19 0 1.4L0 10.74C0 10.96 0.05 11.16 0.14 11.34L5.41 6.07L0.14 0.8Z" />
+					</g>
+				</g>
+				<g id="Group 539">
+					<g id="Group 538">
+						<path id="Path 432" class="shp0" d="M9.87 6.73L8.27 8.27C8.18 8.36 8.06 8.41 7.94 8.41C7.82 8.41 7.7 8.36 7.61 8.27L6.07 6.73L0.8 12C0.98 12.09 1.19 12.14 1.4 12.14L14.54 12.14C14.76 12.14 14.96 12.09 15.14 12L9.87 6.73Z" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

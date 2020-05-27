@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" width="17" height="18">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-636 -4754L1284 -4754L1284 139L-636 139Z" />
+		</clipPath>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp2">
+			<path d="M8.5 17C3.94 17 0.25 13.31 0.25 8.76C0.25 4.2 3.94 0.51 8.5 0.51C13.06 0.51 16.74 4.2 16.74 8.76C16.74 13.31 13.06 17 8.5 17Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #3a559f } 
+		.shp1 { fill: #ffffff } 
+	</style>
+	<g id="main" clip-path="url(#cp1)">
+		<g id="stopka">
+			<g id="Group 369">
+				<g id="Group 344">
+					<g id="Layer 2">
+						<g id="Icons">
+							<g id="Facebook Icon 01">
+								<g id="Group 343" clip-path="url(#cp2)">
+									<path id="Background" class="shp0" d="M8.5 17C3.94 17 0.25 13.31 0.25 8.76C0.25 4.2 3.94 0.51 8.5 0.51C13.06 0.51 16.74 4.2 16.74 8.76C16.74 13.31 13.06 17 8.5 17Z" />
+									<path id="F" class="shp1" d="M11.99 4.15L10.27 4.15C8.35 4.15 7.1 5.42 7.1 7.4L7.1 8.9L5.38 8.9C5.23 8.9 5.11 9.02 5.11 9.17L5.11 11.34C5.11 11.41 5.14 11.48 5.19 11.53C5.24 11.58 5.31 11.61 5.38 11.61L7.1 11.61L7.1 17.37L9.89 17.37L9.89 11.61L11.9 11.61C11.98 11.61 12.04 11.58 12.1 11.53C12.15 11.48 12.17 11.41 12.17 11.34L12.17 9.17C12.17 9.02 12.05 8.9 11.9 8.9L9.89 8.9L9.89 7.63C9.89 7.02 10.04 6.71 10.83 6.71L11.99 6.71C12.13 6.71 12.25 6.59 12.25 6.44L12.25 4.42C12.25 4.27 12.13 4.15 11.99 4.15Z" />
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
