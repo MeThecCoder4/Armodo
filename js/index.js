@@ -52,9 +52,14 @@ function setLinksVisibility() {
 
 class Slider {
   constructor(imgs, howManyToDisplay = 1) {
+    if(howManyToDisplay > imgs.length)
+      throw new Error("Can't display more images than you have!");
+
     this._imgs = imgs;
-    this._index = 0;
+    this._index = 2;
     this._howManyToDisplay = howManyToDisplay;
+    this.clearSlider();
+    this.setImgsToDisplay();
   }
 
   clearSlider() {
@@ -64,30 +69,35 @@ class Slider {
   }
 
   setImgsToDisplay() {
+    let selected = 0;
+    console.log("here");
+    
     for (let i = 0; i < this._imgs.length; i++) {
       // Mark as 'active' (selected to display)
-      if (i >= this._index && i <= this._index + this._howManyToDisplay) {
-        if(i < this._imgs.length)
-          this._imgs[i].classList.add("active");
-        // If we want to select an image past the last one
-        // we will have to start from the first image
-        else {
-          this._imgs[]
-        }
+      if (i >= this._index && i < this._index + this._howManyToDisplay) {
+        this._imgs[i].classList.add("active");
+        selected++;
       }
     }
+
+    // If we exceeded the last image - pick the difference back from the first one
+    if (selected < this._howManyToDisplay) {
+      for(let i = 0; i < this._howManyToDisplay - selected; i++)
+        this._imgs[i].classList.add("active");
+    }
+
   }
 
-  changeSlide(step) {
-    this._imgs[this._index].classList.remove("active");
+  // changeSlide(step) {
+  //   this._imgs[this._index].classList.remove("active");
 
-    if (this._index + step > this._imgs.length - 1)
-      this._index = this._imgs.length - 1;
-    else if (this._index + step < 0) this._index = 0;
-    else this._index += step;
+  //   if (this._index + step > this._imgs.length - 1)
+  //     this._index = this._imgs.length - 1;
+  //   else if (this._index + step < 0) this._index = 0;
+  //   else this._index += step;
 
-    this._imgs[this._index].classList.add("active");
-  }
+  //   this._imgs[this._index].classList.add("active");
+  // }
 }
 
 const photosSlider = document.getElementById("photos-slider");
@@ -95,12 +105,25 @@ const slide = photosSlider.children[1];
 const imgs = slide.getElementsByTagName("img");
 const btPrev = document.getElementById("bt-prev-photo");
 const btNext = document.getElementById("bt-next-photo");
-const photoSlider = new Slider(imgs);
+let photoSlider;
+
+try {
+  console.log("Test");
+  if(window.innerWidth < minDesktopWidth) {
+    photoSlider = new Slider(imgs);
+  }
+  else {
+    photoSlider = new Slider(imgs, 2);
+  }
+}
+catch(err) {
+  console.log(err);
+} 
 
 btNext.addEventListener("click", () => {
-  photoSlider.changeSlide(1);
+  // photoSlider.changeSlide(1);
 });
 
 btPrev.addEventListener("click", () => {
-  photoSlider.changeSlide(-1);
+  // photoSlider.changeSlide(-1);
 });
