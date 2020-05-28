@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 18" width="12" height="18">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-335 -556L25 -556L25 2943L-335 2943Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #cfcfcf;stroke-linecap:round;stroke-width: 2 } 
+	</style>
+	<g id="main mobile" clip-path="url(#cp1)">
+		<g id="marki">
+			<g id="Group 471">
+				<path id="Path 41" class="shp0" d="M2.55 15.51L9 9.06L2.55 2.6" />
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-903 -2854L1017 -2854L1017 2039L-903 2039Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="main" clip-path="url(#cp1)">
+		<g id="insta">
+			<path id="facebook (9)" class="shp0" d="M33.46 0L5.8 0C2.64 0 0.07 2.57 0.07 5.73L0.07 33.39C0.07 36.55 2.64 39.12 5.8 39.12L17.34 39.12L17.34 25.29L12.76 25.29L12.76 18.42L17.34 18.42L17.34 13.75C17.34 9.96 20.43 6.88 24.22 6.88L31.17 6.88L31.17 13.75L24.22 13.75L24.22 18.42L31.17 18.42L30.03 25.29L24.22 25.29L24.22 39.12L33.46 39.12C36.62 39.12 39.2 36.55 39.2 33.39L39.2 5.73C39.2 2.57 36.62 0 33.46 0Z" />
+		</g>
+	</g>
+</svg>

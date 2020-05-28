@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/banners.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
     <title>Armodo</title>
   </head>
   <body>
     <main>
       <header>
         <nav></nav>
-        <!-- SLIDER HERE -->
+        <section id="slider">
+          <div id="slider-screen">
+            slider
+          </div>
+          <div id="slider-controls">
+            <div id="slider-controls-screen"></div>
+          </div>
+        </section>
       </header>
       <section>
         <div class="grid-container">
@@ -38,10 +46,54 @@
       <!-- CHOSEN FOR YOU -->
       <section></section>
       <!-- WHAT'S NEW -->
-      <section></section>
-      <section>
-        <!-- BENEFITS GRID HERE -->
-        <article></article>
+      <section id="whats-new">
+        <div id="whats-new-header">
+          @ARMODO - sprawdź co nowego
+        </div>
+        <div id="social-icons">
+          <img src="../img/fb-quad.svg" class="social-icon" id="insta-icon" />
+          <img src="../img/insta.svg" class="social-icon" />
+        </div>
+        <div id="photos-slider">
+          <img src="../img/arrow-left.svg" id="bt-prev-photo">
+          <div id="slider-slide">
+            <img src="../img/photo1.png" class="active" />
+            <img src="../img/photo2.png"/>
+            <img src="../img/photo3.png"/>
+          </div>
+          <img src="../img/arrow-right.svg" id="bt-next-photo">
+        </div>
+        <div id="why-armodo">
+          Dlaczego warto kupować w armodo
+        </div>
+        <div id="photos-container-wrapper">
+          <div id="photos-grid-container">
+            <div class="photo-grid-item col-6 col-lg-3">
+              <img src="../img/photo1.png" />
+            </div>
+            <div class="photo-grid-item col-6 col-lg-3">
+              <img src="../img/photo2.png" />
+            </div>
+            <div class="photo-grid-item col-6 col-lg-3">
+              <img src="../img/photo3.png" />
+            </div>
+            <div class="photo-grid-item col-6 col-lg-3">
+              <img src="../img/photo4.png" />
+            </div>
+          </div>
+        </div>
+        <article>
+          SEO Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra
+          naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki
+          posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała
+          podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi
+          się przy różnej pogodzie. Wygodne botki marki Carinii. SEO Wygodne
+          botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna -
+          Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają
+          wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to
+          wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy
+          różnej pogodzie. Wygodne botki marki Carinii.
+        </article>
       </section>
       <footer>
         <!-- SIGN UP FOR NEWSLETTER -->
@@ -107,14 +159,14 @@
         <section id="contact-container">
           <div id="tel-fb-wrapper">
             <div id="tel-container">
-              <img src="../img/telephone.svg" id="tel-icon"/>
+              <img src="../img/telephone.svg" id="tel-icon" />
               +48 786818322
-              <img src="../img/envelop.svg" id="envelop-icon"/>
+              <img src="../img/envelop.svg" id="envelop-icon" />
             </div>
             <div id="fb-container">
-              <img src="../img/Background.svg" id="fb-icon"/>
+              <img src="../img/Background.svg" id="fb-icon" />
               <a href="#">Odwiedź nas na Facebooku</a>
-              <img src="../img/arrow.svg" id="arrow-icon"/>
+              <img src="../img/arrow.svg" id="arrow-icon" />
             </div>
           </div>
           <div id="logo-container">
@@ -122,7 +174,7 @@
           </div>
         </section>
         <section id="partners-container">
-          <img src="../img/partners.png"/>
+          <img src="../img/partners.png" />
         </section>
       </footer>
     </main>
